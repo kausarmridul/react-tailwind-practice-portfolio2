@@ -12,8 +12,8 @@ function Contact() {
       id="contact"
       className="flex min-h-screen items-center justify-center py-20"
     >
-      <RevealOnScroll>
-        <div className="w-150 px-4">
+      <RevealOnScroll addClass={"w-full"}>
+        <div className="mx-auto w-full px-4 lg:w-150">
           <h2 className="mb-8 bg-linear-to-r from-blue-500 to-cyan-400 bg-clip-text text-center text-3xl font-bold text-transparent">
             Get In Touch
           </h2>

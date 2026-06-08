@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-function RevealOnScroll({ children }) {
+function RevealOnScroll({ children, addClass }) {
   const ref = useRef(null);
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -15,7 +15,7 @@ function RevealOnScroll({ children }) {
     return () => observer.disconnect();
   }, []);
   return (
-    <div ref={ref} className="reveal">
+    <div ref={ref} className={`reveal ${addClass}`}>
       {children}
     </div>
   );
